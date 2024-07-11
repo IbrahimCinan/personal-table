@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+    <header>
+        <img src="https://ankageo.com/wp-content/uploads/2020/12/logo1-1.png" alt="">
+    </header>
+    <div class="main">
+        <div class="orta">
+
+            <div class="sol">
+                <h2 id="üstyazısı">  <img src="https://ankageo.com/wp-content/uploads/2020/12/logo1-1.png" alt=""> </h2>  <br>
+           
+                <div class="bilgi"> ID  <label id="id-cel"> 1000 </label>   <button onclick="rastgelesayı()" id="buton1" class="üstbutton">id oluştur</button> </div> <br>
+                <div class="bilgi"> Ad: <input type="text"   id="ad-cel" placeholder="Adınızı Girin*" required > </div> <br>
+                <div class="bilgi"> Soyad: <input type="text" id="soyad-cel" placeholder="Soyadınızı Girin*"> </div><br>
+                <div class="bilgi"> T.C: <input type="tel" maxlength="11" id="tc-cel" placeholder="TC Giriniz "> </div><br>
+                <div class="bilgi"> Telefon: <input  type="tel" maxlength="11" id="telefon-cel" placeholder="Telefon Girin" required > </div><br>
+                <div class="bilgi"> <strong> Lütfen ** alanları eksiksiz doldurun</strong> <button onclick="addRow()" class="üstbutton">Gönder</button> </div> 
+          
+            </div>
+            <div class="sağ">
+                <h2 id="üstyazısı2"> <img class="safoto" src="https://ankageo.com/wp-content/uploads/2020/12/logo1-1.png" alt="">  </h2> <br>
+                <div class="bilgi2"> ID <label id="id2"> 1000 </label>   </div> <br>
+                <div class="bilgi2"> Ad: <input type="text" id="ad2" > </div> <br>
+                <div class="bilgi2"> Soyad: <input type="text" id="soyad2" > </div><br>
+                <div class="bilgi2"> T.C: <input type="text" id="tc2" > </div><br>
+                <div class="bilgi2"> Telefon: <input type="text" id="telefon2"> </div><br>
+                <div class="bilgi2"> <button onclick="updateRow()" id="buton2" class="üstbutton">Düzenle</button> </div>
+            </div>
+        </div>
+        <div class="alt">
+            <div class="alt-üstü">
+              <div>
+                <h2 class="database-name">Database</h2>
+              </div>            
+                <div class="altdeneme">           
+                  <div class="delete-row">
+                    <input type="text" id="delete-row-id" placeholder="No or ID">
+                    <button class="deletestil" onclick="deleteRow()">Delete </button>
+                    <button class="deletestil2" onclick="deleteAllRows()">Delete All </button>
+                    
+                  </div>
+
+                </div>
+                
+            </div>
+            <div class="alt-altı">
+                <table>
+                    <thead>
+                      <tr>
+                        <th>NO</th>
+                        <th>ID</th>
+                        <th>AD</th>
+                        <th>SOYAD</th>
+                        <th>TC</th>
+                        <th>TELEFON</th>
+                       
+                      </tr>
+                    </thead>
+                    <tbody>
+                    
+                    </tbody>
+                  </table>
+            </div>
+           
+      
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

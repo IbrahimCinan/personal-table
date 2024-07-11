@@ -1,0 +1,276 @@
+
+/* *{
+  magrgin:0;
+  padding:0;
+} */
+
+header{
+    background-color: rgb(6, 0, 0);
+    color: orange;
+    text-align: center;
+    padding: 20px;
+    margin-top: -10px;
+    
+}
+body{
+    background-color: rgb(179, 179, 179);
+}
+.main{
+  flex-direction: column;
+
+
+}
+.orta{
+    display: flex;
+    justify-content: space-between;
+    height: 60vh;
+}
+.alt{
+    height: 28vh;
+    align-items: center;
+    text-align: center;
+    margin-left: 15%;
+    width: 1000px;
+    background-color: rgb(179, 179, 179);
+    flex-direction: column;
+    border-radius: 12px;
+}
+.alt-üstü{
+    height: 40%;
+    background-color: rgb(230, 60, 40);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#üstyazısı{
+    margin-left: 230px;
+    margin-top: 5px;
+}
+#üstyazısı2{
+    margin-left: 230px;
+    margin-top: 5px;
+    color: white;
+   
+}
+
+.safoto{
+filter:brightness(0) invert(1) ;
+
+}
+.üstbutton{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+.üstbutton:hover{
+    background-color: green;
+
+}
+.üstbutton:active{
+    background-color: rgb(31, 122, 122);
+}
+.sol{
+   
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://ankageo.com/wp-content/uploads/2021/04/cropped-site-icon-1.png"); 
+    background-size: 220px;
+    background-repeat: no-repeat;
+    background-position: 20px 30px;
+
+    width: 380px;
+    height: 350px;
+    background-color: rgb(211, 211, 211);
+    padding: 20px;
+    margin-left: 9.9%;
+    margin-top: 3.2%;
+}
+.bilgi{
+    display: flex;
+    justify-content: space-between;
+}
+.bilgi label{
+    margin-left: -40px;
+    font-weight: 700;
+    font-size: larger;
+}
+.bilgi2 label{
+    margin-right: 210px;
+    font-weight: 700;
+    font-size: larger;
+}
+.bilgi2{
+    display: flex;
+    justify-content: space-between;
+}
+.bilgi2 input{
+    width: 250px;
+    border: solid 2 gray;
+    border-radius: 5px;
+    height: 20px;
+    padding: 2px;
+}
+.bilgi2 #id{
+    border: none;
+    width: 60px;
+    margin-right: 190px;
+}
+.bilgi input{
+    width: 250px;
+    border: solid 2 gray;
+    border-radius: 5px;
+    height: 20px;
+    padding: 2px;
+}
+.bilgi #id{
+    border: none;
+    width: 60px;
+}
+.sağ{
+    width: 380px;
+    height: 350px;
+    background-color: rgb(78, 78, 78);
+    padding: 20px;
+    margin-right: 10%;
+    margin-top: 3.2%;
+    background-image: url("https://ankageo.com/wp-content/uploads/2021/04/cropped-site-icon-1.png"); 
+    background-size: 220px;
+    background-repeat: no-repeat;
+    background-position: 20px 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0px;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+
+  /*.delete-row {
+    
+  margin-left: 410px;
+  margin-top: 11px;
+    text-align: center;
+   
+    
+ 
+  }
+     
+  .delete-all-row {
+    margin-top: 13px;
+    
+    text-align: center;
+  }
+    
+  #delete-row-id{
+    width: 260px;
+    height: 20px;
+    border-radius: 5px;
+ 
+
+  }
+    */
+  .database-name{
+    margin-left: 20px;
+    color: white;
+  }
+
+  .silmeişlemi ,.düzenleme{
+    float: right;
+  }
+  .deletestil{
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+ 
+  }
+  .deletestil2{
+    background-color: rgb(94, 90, 94);
+    color: white;
+    border-radius: 2px;
+    
+  }
+  .deletestil:hover,.deletestil2:hover{
+    background-color: rgb(173, 212, 55);
+  }
+ 
+
+
+  /*@media screen and (max-width: 1118px) {
+    .main{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .orta {
+      flex-direction: column;
+      display: block;
+      margin-bottom: 500px;
+      align-items: center;
+      margin-left: 7%; 
+    
+      
+    }
+    .orta .sağ{
+      margin-left: 150px; 
+     
+    }
+   
+  
+    .alt{
+      display: block;
+      float: inline-end;
+      width: 100%;
+       
+    }
+  }
+    */
+    @media screen and (max-width: 1168px) {
+      .main{
+        flex-direction: column;
+        margin: unset;
+        padding: unset;
+      }
+      .orta{
+        flex-direction: column;
+        margin: unset;
+        padding: unset;
+        margin-bottom: 330px;
+        margin-top: 20px;
+      }
+      .alt{
+        flex-direction: column;
+        margin: unset;
+        padding: unset;
+        width: 100%;
+      }
+      .alt-üstü{
+        
+        display: flex;
+       
+      }
+      .sol{
+      
+        margin: unset;
+        margin-left: 25%;
+        margin-bottom: 12px;
+   
+      }
+      .sağ{
+        margin: unset;
+        margin-left: 25%;
+       
+    
+      }
+     
+    }
