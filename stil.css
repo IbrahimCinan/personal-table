@@ -243,11 +243,13 @@ table {
       }
       .orta{
         flex-direction: column;
+        align-items: center;
         margin: unset;
         padding: unset;
         margin-bottom: 330px;
         margin-top: 20px;
       }
+    
       .alt{
         flex-direction: column;
         margin: unset;
@@ -262,15 +264,59 @@ table {
       .sol{
       
         margin: unset;
-        margin-left: 25%;
+      
         margin-bottom: 12px;
    
       }
       .sağ{
         margin: unset;
-        margin-left: 25%;
+      
        
     
       }
      
     }
+
+    @media screen and (min-height: 777px) and (min-width: 776px) {
+      .main{
+        flex-direction: column;
+        margin: unset;
+        padding: unset;
+      }
+      .orta{
+        flex-direction: column;
+        align-items: center;
+        margin: unset;
+        padding: unset;
+        margin-bottom: 330px;
+        margin-top: 20px;
+      }
+    
+      .alt{
+        flex-direction: column;
+        margin: unset;
+        padding: unset;
+        width: 100%;
+       margin-top: -150px;
+   
+        
+      }
+      .alt-üstü{
+        
+        display: flex;
+       
+      }
+      .sol{
+      
+        margin: unset;
+      
+        margin-bottom: 12px;
+   
+      }
+      .sağ{
+        margin: unset;  
+    
+      }
+
+    }
+    

@@ -65,7 +65,7 @@ function deleteRow() {
   }
 
   function sil(row) {
-    // Satırı silmek için DOM manipülasyonu
+   
     row.parentNode.removeChild(row);
   }
 
@@ -75,20 +75,20 @@ function deleteRow() {
     const ad = row.cells[2].innerHTML.trim();
     const soyad = row.cells[3].innerHTML.trim();
     const tc = row.cells[4].innerHTML.trim();
-    const telefon = row.cells[5].innerHTML.trim().split(' ')[0]; // Telefon numarasını al, düzenleme sırasında sadece numarayı kullanacağız
+    const telefon = row.cells[5].innerHTML.trim().split(' ')[0]; 
 
-    // Sol taraftaki giriş alanlarına bilgileri doldur
+  
     document.getElementById('id2').textContent = id;
     document.getElementById('ad2').value = ad;
     document.getElementById('soyad2').value = soyad;
     document.getElementById('tc2').value = tc;
     document.getElementById('telefon2').value = telefon;
 
-    // Gönder butonunu Güncelle butonu olarak değiştir
+ 
     const button = document.getElementById('buton2');
     button.textContent = 'Güncelle';
     button.onclick = function() {
-        // Güncelle butonuna tıklandığında satırı güncelle
+      
         updateRow(row);
     };
 }
@@ -108,14 +108,14 @@ function updateRow(row) {
     row.cells[4].innerHTML = tc;
     row.cells[5].innerHTML = `${telefon} <button onclick="duzenle(this.parentNode.parentNode)" class="düzenleme">Düzenle</button> <button onclick="sil(this.parentNode.parentNode)" class="silmeişlemi">sil</button>`;
 
- // Gönder butonunu tekrar eski haline getir
+
     const button = document.getElementById('buton2');
     button.textContent = 'Düzenle';
       /* button.onclick = function() {
         addRow();
     };  */
 
-    // Giriş alanlarını temizle
+  
     document.getElementById('ad2').value = '';
     document.getElementById('soyad2').value = '';
     document.getElementById('tc2').value = '';
